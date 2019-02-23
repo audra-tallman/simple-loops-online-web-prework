@@ -1,41 +1,41 @@
 # REMEMBER: print your output to the terminal using 'puts'
-number_of_times = 0
+
 
 def loop_iterator(number_of_times)
+counter = 0 
   loop do
     puts "Welcome to Flatiron School's Web Development Course!"
-    break if number_of_times == 7
-    number_of_times +=1
+    counter +=1
+    break if counter == number_of_times
   end
 end
   
 def times_iterator(number_of_times)
-  7.times do
+  number_of_times.times do
   puts "Welcome to Flatiron School's Web Development Course!"
   end 
 end
 
 def while_iterator(number_of_times)
-  while number_of_times < 7
+  counter = 0  
+  while counter <= number_of_times
   puts "Welcome to Flatiron School's Web Development Course!"
-  number_of_times += 1
+  counter += 1
   end
 end
 
 def until_iterator(number_of_times)
- until number_of_times == 7
+ counter = 0 
+ until counter == number_of_times
  puts "Welcome to Flatiron School's Web Development Course!"
- number_of_times += 1
+ counter += 1
   end 
 end
 
 
 def for_iterator(number_of_times)
-  numbers = 1...7
-  for number_of_times in numbers do
+  for count in 1..number_of_times do
   puts "Welcome to Flatiron School's Web Development Course!"
   end  
-  # code your solution here using the "for" keyword
-  # remember that `for` requires a range of numbers. How can we turn our number into a range?
 end
 
