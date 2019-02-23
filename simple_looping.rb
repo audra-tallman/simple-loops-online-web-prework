@@ -29,8 +29,10 @@ def until_iterator(number_of_times)
   end 
 end
 
+
 def for_iterator(number_of_times)
-  for number_of_times in 1...7 do
+  numbers = 1...7
+  for number_of_times in numbers do
   puts "Welcome to Flatiron School's Web Development Course!"
   end  
   # code your solution here using the "for" keyword
